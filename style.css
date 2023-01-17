@@ -104,6 +104,7 @@ header{
     
     /* border-bottom: solid black 100%; */
     background-color: white;
+    box-shadow: 0px 0.5px gray;
 
 }
 
@@ -123,18 +124,77 @@ header{
 }
 
 #dealsOfDay{
-    height: 100px;
+    height: auto;
     width: 70%;
-    background-color: #515863;
+    background-color: #ffffff;
     float: left;
 
+}
+
+
+#front-line{
+    /* border-bottom: black 1px solid; */
+    box-shadow: 0px 0.5px gray;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: nowrap;
+}
+.fl{
+    min-width: fit-content;
+    padding-left: 20px;
+    margin: auto 1px;
+}
+
+#demo{
+    display: inline;
+    text-align: center;
+  /* font-size: 20px; */
+  margin-top: 0px;
+
+}
+
+#view_all{
+   /*    margin-right: 50%; */
+   /* padding-left: 50rem; */
+   margin-left: 70%; 
+}
+
+#below-line{
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.deal_img{
+    max-width: 150px;
 }
 
 #advertise{
     height: 100px;
     width: 18%;
-    background-color: #792727;
+    /* background-color: #792727; */
     float: left;
     margin-left: 1%;
+    text-align: center;
+}
 
+#adv-img{
+    max-height: 400px;
+    /* width: auto; */
+}
+
+#desc-line{
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.item-name{
+    text-align: center;
 }
