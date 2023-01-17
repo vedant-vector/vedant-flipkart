@@ -1,0 +1,55 @@
+/*-----------Header---------------*/
+
+header{
+    background-color: #2874f0;
+    height: 56px;
+    width:auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    /* padding-right: 10%; */
+    margin-top: 0%;
+}
+
+
+#header-image{
+    max-height: 56px;
+}
+#search{
+    margin: auto;
+    margin-left: 3px;
+    margin-right: 10%;
+}
+#search-field{
+    width: 600px;
+    height: 35px;
+}
+
+#login{
+    margin: 10px;
+    margin-left: 10%;
+
+}
+#login-btn{
+    /* padding: auto; */
+    height: 35px;
+    width: 125px;
+    background-color: white;
+    color: #2874f0;
+    font-size: 16px;
+    font-weight: bold;
+    /* box-shadow: none; */
+    border: none;
+}
+
+#more,#cart{
+    margin: auto 20px;
+    color: white;
+    padding-left: 2px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#cart{
+    padding-right: 20%;
+}
