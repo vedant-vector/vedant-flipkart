@@ -1,5 +1,15 @@
 /*-----------Header---------------*/
+* {
+    margin: 0;
 
+}
+
+/* .container{
+    background-color: black;
+} */
+body{
+    background-color: #f1f3f6;
+}
 header{
     background-color: #2874f0;
     /* height: 56px; */
@@ -65,4 +75,66 @@ header{
     font-size: 16px;
     font-weight: bold;
  
+}
+
+
+/* Making box layout, color height etc given for that */
+/* #nav-bar{
+    background-color: red;
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item{
+    color: beige;
+    background-color: black;
+    
+    
+} */
+
+#nav-bar{
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: auto 15%; */
+    padding: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    
+    /* border-bottom: solid black 100%; */
+    background-color: white;
+
+}
+
+.nav-item{
+    text-align: center;
+}
+
+.nav-image{
+    margin: auto;
+    max-height: 90px;
+    flex-shrink: 3;
+}
+#main-area{
+    float: left;
+    width: 100%;
+    margin: 1% 5%;
+}
+
+#dealsOfDay{
+    height: 100px;
+    width: 70%;
+    background-color: #515863;
+    float: left;
+
+}
+
+#advertise{
+    height: 100px;
+    width: 18%;
+    background-color: #792727;
+    float: left;
+    margin-left: 1%;
+
 }
