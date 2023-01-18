@@ -14,7 +14,7 @@ header{
     background-color: #2874f0;
     /* height: 56px; */
     height: max-content;
-    width:auto;
+    /* width:auto; */
     display: flex;
     justify-content: center;
     padding-left: 10%;
@@ -38,7 +38,12 @@ header{
     width: 600px;
     height: 35px;
     flex-shrink: 5;
-}
+    background-image: url(https://www.pngarea.com/pngm/109/1164446_searchicon-png-search-icon-png-download.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 99%;
+    
+}   
 
 #login{
     margin: 10px;
@@ -63,6 +68,7 @@ header{
     padding-left: 2%;
     font-size: 16px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 #cart{
@@ -74,6 +80,7 @@ header{
     padding-left: 2px;
     font-size: 16px;
     font-weight: bold;
+    text-decoration: none;
  
 }
 
@@ -119,13 +126,13 @@ header{
 }
 #main-area{
     /* float: left; */
-    width: 100%;
+    width: auto;
     margin: 1% 5%;
 }
 
 #dealsOfDay{
     height: auto;
-    width: 70%;
+    width: 81%;
     background-color: #ffffff;
     float: left;
     box-shadow: 0px 0.1px gray;
@@ -181,9 +188,6 @@ header{
 #boxing{
     min-height: 150px;
 }
-
-
-
 
 
 
@@ -251,7 +255,7 @@ header{
     /* display: block; */
     background-color: rgb(255, 255, 255);
     overflow: hidden;
-    width: 90%;
+    width: 99%;
     /* margin: auto; */
     padding-top: 10px;
     padding-bottom: 20px;
@@ -308,3 +312,21 @@ header{
     min-height: 210px;
 }
 
+/* ---------------------------- Hover Effects-------------- */
+.deal_img:hover{
+    transform: scale(1.5);
+}
+
+.lower-img:hover{
+    transform: scale(1.2);
+}
+
+#adv-img:hover{
+    transform: scale(1.2);
+}
+.view-bt:hover{
+    transform: scale(1.1);
+}
+#login-btn:hover{
+    transform: scale(1.1);
+}
