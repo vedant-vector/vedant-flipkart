@@ -118,7 +118,7 @@ header{
     flex-shrink: 3;
 }
 #main-area{
-    float: left;
+    /* float: left; */
     width: 100%;
     margin: 1% 5%;
 }
@@ -128,6 +128,8 @@ header{
     width: 70%;
     background-color: #ffffff;
     float: left;
+    box-shadow: 0px 0.1px gray;
+    margin-bottom: 10px;
 
 }
 
@@ -166,6 +168,7 @@ header{
     height: auto;
     align-items: center;
     padding-top: 5px;
+    flex-wrap: wrap;
 }
 
 .deal_img{
@@ -173,16 +176,17 @@ header{
 }
 
 #advertise{
-    height: 100px;
+    height: auto;
     width: 18%;
     /* background-color: #792727; */
     float: left;
     margin-left: 1%;
     text-align: center;
+    margin-bottom: 1%;
 }
 
 #adv-img{
-    max-height: 400px;
+    max-height: 300px;
     /* width: auto; */
 }
 
@@ -193,8 +197,91 @@ header{
     align-items: center;
     padding-top: 5px;
     padding-bottom: 5px;
+    justify-content: space-around;
 }
 
 .item-name{
     text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width:100px; 
+    /* max-width: min-content; */
+    font-size: 14px;
+    font-weight: 700;
+    flex-wrap: wrap;
+    /* margin-right: 0% */
+    margin: auto 0%;
+    color: black;
+    text-decoration: none;
+}
+
+.discount{
+    color: #388e3c;
+    text-align: center;
+}
+
+.item-details{
+    opacity: 0.6;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width:100px; 
+}
+
+#lower-section{
+    /* display: block; */
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    width: 90%;
+    /* margin: auto; */
+    padding-top: 10px;
+}
+
+#lower-first-line{
+  
+    margin-bottom: 10px;
+    box-shadow: 0px 0.5px gray;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+#lower-heading{
+    display: inline;
+}
+#lower-view-btn{
+    float: right;
+    /* padding-right: 10px; */
+}
+
+.ref-link{
+    font-size: small;
+    color: black;
+    text-decoration: none;
+}
+
+.view-bt{
+    padding: 12px 20px;
+    /* margin: auto; */
+    background-color: #2874f0;
+    color: white;
+    border: none;
+}
+
+#lower-middle-line{
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+}
+
+#lower-list{
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: space-around;
 }
