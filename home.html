@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,62 +9,63 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <script>
         // Set the date we're counting down to
         var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
-        
+
         // Update the count down every 1 second
-        var x = setInterval(function() {
-        
-          // Get today's date and time
-          var now = new Date().getTime();
-            
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
-            
-          // Time calculations for days, hours, minutes and seconds
-          //var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-          // Output the result in an element with id="demo"
-          document.getElementById("demo").innerHTML = hours + "h "
-          + minutes + "m " + seconds + "s left";
-            
-          // If the count down is over, write some text 
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-          }
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            //var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = hours + "h "
+                + minutes + "m " + seconds + "s left";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
         }, 1000);
-        </script>
+    </script>
 
     <title>Flipkart</title>
 </head>
+
 <body>
 
     <div class="container">
         <header>
-            <div id="logo">                
+            <div id="logo">
                 <img src="Images/logo.png" alt="Logo" id="header-image">
             </div>
             <div id="search">
-                <input type="search" placeholder="&nbsp;&nbsp;Search for products brands & more" id="search-field" >      
+                <input type="search" placeholder="&nbsp;&nbsp;Search for products brands & more" id="search-field">
                 <!-- <input type="button" value="" id="search-sym"> &#128270 -->
-                
+
             </div>
-            <div id="login">                
+            <div id="login">
                 <input type="button" value="Login" id="login-btn">
             </div>
-            <div id="more">                
+            <div id="more">
                 <p>More </p>
             </div>
             <div id="cart">
-                <i style="font-size:16px" class="fa">&#xf07a;</i>   
-                Cart             
-                
+                <i style="font-size:16px" class="fa">&#xf07a;</i>
+                Cart
+
             </div>
 
         </header>
@@ -108,7 +110,7 @@
         </nav>
 
         <div id="main-area">
-           <section id="dealsOfDay">
+            <section id="dealsOfDay">
                 <div id="front-line">
                     <div class="fl">
                         <h3>Deals of the Day</h3>
@@ -122,108 +124,129 @@
                         <a href="#"><input type="button" value="VIEW ALL" class="view-bt"></a>
                     </div>
                 </div>
+
+
+
+                <!--  ----------------------------------------------------------------  -->
+
+
                 <div id="below-line">
                     <div id="dealitem1" class="deal_item">
-                        <a href="#"><img src="Images/main-images/1-water-bottol.webp" alt="" class="deal_img">
-                        </a>
+                        <div id="boxing">
+                            <a href="#"><img src="Images/main-images/1-water-bottol.webp" alt="" class="deal_img">
+                            </a>
+                        </div>
+
+                        <p class="item-name">
+                            <a href="#" title="Milton,Cello, joyo and many more" class="item-name">Milton,Cello, joyo
+                                and many more</a>
+
+                        </p>
+                        <p class="discount">
+                            75% Off
+                        </p>
+                        <p class="item-details">
+                            Top deals
+                        </p>
                     </div>
                     <div id="dealitem2" class="deal_item">
-                        <a href="#"><img src="Images/main-images/2-TV.webp" alt="" class="deal_img"></a>
-                        
+                        <div id="boxing">
+
+                            <a href="#"><img src="Images/main-images/2-TV.webp" alt="" class="deal_img"></a>
+
+                        </div>
+                        <p class="item-name">
+                            <a href="#" title=" Smart TV" class="item-name">Smart TV</a>
+
+                        </p>
+                        <p class="discount">
+                            20% Off
+                        </p>
+                        <p class="item-details">
+                            Available in variety range
+                        </p>
                     </div>
                     <div id="dealitem3" class="deal_item">
-                        <a href="#"><img src="Images/main-images/3-camera.webp" alt="" class="deal_img"></a>
+
+                        <div id="boxing">
+
+                            <a href="#"><img src="Images/main-images/3-camera.webp" alt="" class="deal_img"></a>
+
+                        </div>
+                        <p class="item-name">
+                            <a href="#" title="Nikon,Canon,Xiomi" class="item-name">Nikon,Canon,Xiomi </a>
+                        </p>
+                        <p class="discount">
+                            Buy 1 get 1
+                        </p>
+                        <p class="item-details">
+                            Low prices
+                        </p>
                     </div>
                     <div id="dealitem4" class="deal_item">
-                        <a href="#"><img src="Images/main-images/4-Teddy.webp" alt="" class="deal_img"></a>
+
+                        <div id="boxing">
+
+                            <a href="#"><img src="Images/main-images/4-Teddy.webp" alt="" class="deal_img"></a>
+
+                        </div>
+                        <p class="item-name">
+                            <a href="#" title=" Toys" class="item-name">Toys</a>
+
+                        </p>
+                        <p class="discount">
+                            New collection
+                        </p>
+                        <p class="item-details">
+                            Best Deals
+                        </p>
                     </div>
                     <div id="dealitem5" class="deal_item">
-                        <a href="#"><img src="Images/main-images/5-AC.webp" alt="" class="deal_img"></a>
+
+                        <div id="boxing">
+
+                            <a href="#"><img src="Images/main-images/5-AC.webp" alt="" class="deal_img"></a>
+
+                        </div>
+                        <p class="item-name">
+                            <a href="#" title=" A.C." class="item-name">A.C.</a>
+
+                        </p>
+                        <p class="discount">
+                            5 Year warranty
+                        </p>
+                        <p class="item-details">
+                            OFF Season sale
+                        </p>
                     </div>
                     <div id="dealitem6" class="deal_item">
-                        <a href="#"><img src="Images/main-images/6-Guitar.webp" alt="" class="deal_img"></a>
+
+                        <div id="boxing">
+
+                            <a href="#"><img src="Images/main-images/6-Guitar.webp" alt="" class="deal_img"></a>
+
+                        </div>
+                        <p class="item-name">
+                            <a href="#" title="Musical Instruments" class="item-name">Musical Instruments</a>
+
+                        </p>
+                        <p class="discount">
+                            40% Off
+                        </p>
+                        <p class="item-details">
+                            At very low price
+                        </p>
                     </div>
                     <div id="dealitem7" class="deal_item">
-                        <a href="#"><img src="Images/main-images/7-monitors.webp" alt="" class="deal_img"></a>
-                    </div>
-                </div>
-                <div id="desc-line">
-                    <div class="comm">
-                        <p class="item-name"> 
-                            <a href="#" title="Milton,Cello, joyo and many more" class="item-name">Milton,Cello, joyo and many more</a>
-                            
-                        </p>
-                        <p class="discount">
-                            75% Off
-                        </p>
-                        <p class="item-details">
-                            Top deals
-                        </p>
-                    </div>
-                    <div class="comm">
-                        <p class="item-name"> 
-                            <a href="#" title=" Smart TV" class="item-name">Smart TV</a>
-                           
-                        </p>
-                        <p class="discount">
-                            20% Off
-                        </p>
-                        <p class="item-details">
-                            Available in variety range
-                        </p>
-                    </div>
-                    <div class="comm">
-                       
-                        <p class="item-name"> 
-                             <a href="#" title="Nikon,Canon,Xiomi" class="item-name">Nikon,Canon,Xiomi </a>
-                        </p>
-                        <p class="discount">
-                            Buy 1 get 1
-                        </p>
-                        <p class="item-details">
-                            Low prices
-                        </p>
-                    </div>
-                    <div class="comm">
-                        <p class="item-name"> 
-                            <a href="#" title=" Toys" class="item-name">Toys</a>
-                           
-                        </p>
-                        <p class="discount">
-                            New collection
-                        </p>
-                        <p class="item-details">
-                            Best Deals
-                        </p>
-                    </div>
-                    <div class="comm">
-                        <p class="item-name"> 
-                            <a href="#" title=" A.C." class="item-name">A.C.</a>
-                           
-                        </p>
-                        <p class="discount">
-                            5 Year warranty
-                        </p>
-                        <p class="item-details">
-                            OFF Season sale
-                        </p>
-                    </div>
-                    <div class="comm">
-                        <p class="item-name"> 
-                            <a href="#" title="Musical Instruments" class="item-name">Musical Instruments</a>
-                            
-                        </p>
-                        <p class="discount">
-                            40% Off
-                        </p>
-                        <p class="item-details">
-                            At very low price
-                        </p>
-                    </div>
-                    <div class="comm">
-                        <p class="item-name"> 
+
+                        <div id="boxing">
+
+                            <a href="#"><img src="Images/main-images/7-monitors.webp" alt="" class="deal_img"></a>
+
+                        </div>
+                        <p class="item-name">
                             <a href="#" title="Desktop,Computer" class="item-name">Desktop,Computer</a>
-                            
+
                         </p>
                         <p class="discount">
                             Flat 20% Off
@@ -233,105 +256,64 @@
                         </p>
                     </div>
                 </div>
-           </section>
-           <div id="advertise">
-            <aside>
-                <img src="Images/main-images/adv.jpg" alt="advertisement" id="adv-img" >
-               </aside>
-
-           </div>
-           <div id="lower-section">
-                <div id="lower-first-line">
-          
-                        <h3 id="lower-heading">All Electronics</h3>
-                        <input type="button" value="VIEW ALL" id="lower-view-btn" class="view-bt">
-                        
-                        <p><a href="#" class="ref-link">Shop Now!</a></p>
-                   
-                    <div id="lower-btn">
+                <!-- <div id="desc-line">
+                    <div class="comm">
                         
                     </div>
+                    <div class="comm">
+                        
+                    </div>
+                    <div class="comm">
+                       
+                        
+                    </div>
+                    <div class="comm">
+                        
+                    </div>
+                    <div class="comm">
+                        
+                    </div>
+                    <div class="comm">
+                        
+                    </div>
+                    <div class="comm">
+                       
+                    </div>
+                </div> -->
+            </section>
+            <div id="advertise">
+                <aside>
+                    <img src="Images/main-images/adv.jpg" alt="advertisement" id="adv-img">
+                </aside>
+
+            </div>
+            <div id="lower-section">
+                <div id="lower-first-line">
+
+                    <h3 id="lower-heading">All Electronics</h3>
+                    <input type="button" value="VIEW ALL" id="lower-view-btn" class="view-bt">
+
+                    <p><a href="#" class="ref-link">Shop Now!</a></p>
+
+                    <div id="lower-btn">
+
+                    </div>
                 </div>
+
+
+
+                <!-- ---------------- ------------------------------------------------->
+
+
                 <div id="lower-middle-line">
                     <div id="lower-items1">
-                        <img src="Images/sub-images/1-handsfree.webp" alt="">
-                    </div>
-                    <div id="lower-items2">
-                        <img src="Images/sub-images/2-Noice-watch.webp" alt="" class="lower-img">
-                    </div>
-                    <div id="lower-items3">
-                        <img src="Images/sub-images/3-oppo-pads.webp" alt="" class="lower-img">
-                    </div>
-                    <div id="lower-items4"><img src="Images/sub-images/4-firebolt.webp" alt="" class="lower-img"></div>
-                    <div id="lower-items5"><img src="Images/sub-images/5-tablet-guard.webp" alt="" class="lower-img"></div>
-                    <div id="lower-items6"><img src="Images/sub-images/6-game-control.webp" alt="" class="lower-img"></div>
-                    <div id="lower-items7"><img src="Images/sub-images/7.webp" alt="" class="lower-img"></div>
-                </div>
-                <div id="lower-list">
-                    <div class="comm">
-                        <p class="item-name"> 
-                            <a href="#" title="Milton,Cello, joyo and many more" class="item-name">Milton,Cello, joyo and many more</a>
-                            
-                        </p>
-                        <p class="discount">
-                            75% Off
-                        </p>
-                        <p class="item-details">
-                            Top deals
-                        </p>
-                    </div>
-                    <div class="comm">
-                        <p class="item-name"> 
-                            <a href="#" title=" Smart TV" class="item-name">Smart TV</a>
-                           
-                        </p>
-                        <p class="discount">
-                            20% Off
-                        </p>
-                        <p class="item-details">
-                            Available in variety range
-                        </p>
-                    </div>
-                    <div class="comm">
-                       
-                        <p class="item-name"> 
-                             <a href="#" title="Nikon,Canon,Xiomi" class="item-name">Nikon,Canon,Xiomi </a>
-                        </p>
-                        <p class="discount">
-                            Buy 1 get 1
-                        </p>
-                        <p class="item-details">
-                            Low prices
-                        </p>
-                    </div>
-                    <div class="comm">
-                        <p class="item-name"> 
-                            <a href="#" title=" Toys" class="item-name">Toys</a>
-                           
-                        </p>
-                        <p class="discount">
-                            New collection
-                        </p>
-                        <p class="item-details">
-                            Best Deals
-                        </p>
-                    </div>
-                    <div class="comm">
-                        <p class="item-name"> 
-                            <a href="#" title=" A.C." class="item-name">A.C.</a>
-                           
-                        </p>
-                        <p class="discount">
-                            5 Year warranty
-                        </p>
-                        <p class="item-details">
-                            OFF Season sale
-                        </p>
-                    </div>
-                    <div class="comm">
-                        <p class="item-name"> 
-                            <a href="#" title="Musical Instruments" class="item-name">Musical Instruments</a>
-                            
+                        <div id="lower-boxing">
+                            <img src="Images/sub-images/1-handsfree.webp" alt="handsfree">
+
+                        </div>
+                        <p class="item-name">
+                            <a href="#" title="Realme wireless" class="item-name">Realme wireless</a>
+
                         </p>
                         <p class="discount">
                             40% Off
@@ -340,33 +322,121 @@
                             At very low price
                         </p>
                     </div>
-                    <div class="comm">
-                        <p class="item-name"> 
-                            <a href="#" title="Desktop,Computer" class="item-name">Desktop,Computer</a>
-                            
+
+                    <div id="lower-items2">
+                        <div id="lower-boxing">
+                            <img src="Images/sub-images/2-Noice-watch.webp" alt="Noice-watch" class="lower-img">
+
+                        </div>
+                        <p class="item-name">
+                            <a href="#" title="Noice-combat" class="item-name">Noice-combat</a>
+
                         </p>
                         <p class="discount">
-                            Flat 20% Off
+                            starts @ 999*/-
                         </p>
                         <p class="item-details">
-                            Lenovo,Mac,Hp
+                            Trending
                         </p>
+                    </div>
+                    <div id="lower-items3">
+                        <div id="lower-boxing">
+                            <img src="Images/sub-images/3-oppo-pads.webp" alt="Lenovo smart tablet" class="lower-img"
+                                id="l-img">
+
+                        </div>
+                        <p class="item-name">
+                            <a href="#" title="Lenovo smart tablet" class="item-name">Lenovo smart tablet</a>
+
+                        </p>
+                        <p class="discount">
+                            Flat deals
+                        </p>
+                        <p class="item-details">
+                            New arrivals
+                        </p>
+                    </div>
+                    <div id="lower-items4">
+                        <div id="lower-boxing">
+                            <img src="Images/sub-images/4-firebolt.webp" alt="Firebolt Smart" class="lower-img">
+
+                        </div>
+                        <p class="item-name">
+                            <a href="#" title="Firebolt Smart" class="item-name">Firebolt Smart</a>
+
+                        </p>
+                        <p class="discount">
+                            60% - 80% Off
+                        </p>
+                        <p class="item-details">
+                            At very low price
+                        </p>
+                    </div>
+
+                    <div id="lower-items5">
+                        <div id="lower-boxing">
+                            <img src="Images/sub-images/5-tablet-guard.webp" alt="Tablet Guard" class="lower-img">
+
+                        </div>
+                        <p class="item-name">
+                            <a href="#" title="Tablet Guard" class="item-name">Tablet Guard</a>
+
+                        </p>
+                        <p class="discount">
+                            30% Off
+                        </p>
+                        <p class="item-details">
+                            Festival Offers
+                        </p>
+                    </div>
+                    <div id="lower-items6">
+                        <div id="lower-boxing">
+                            <img src="Images/sub-images/6-game-control.webp" alt="Gaming Accessories" class="lower-img">
+
+                        </div>
+                        <p class="item-name">
+                            <a href="#" title="Gaming Accessories" class="item-name">Gaming Accessories</a>
+
+                        </p>
+                        <p class="discount">
+                            starts @ 4999/-
+                        </p>
+                        <p class="item-details">
+                            Buy 2 Get 1
+                        </p>
+
+                    </div>
+                    <div id="lower-items7">
+                        <div id="lower-boxing">
+                            <img src="Images/sub-images/7.webp" alt="boAt smart" class="lower-img">
+
+                        </div>
+                        <p class="item-name">
+                            <a href="#" title="boAt smart" class="item-name">boAt smart</a>
+
+                        </p>
+                        <p class="discount">
+                            1 year warranty
+                        </p>
+                        <p class="item-details">
+                            At very low price
+                        </p>
+
+
+
                     </div>
                 </div>
 
 
-                <div id="">
-                    
-                </div>
 
-
-           </div>
+            </div>
         </div>
 
-       
+
     </div>
 
 
-    
+
 </body>
+
 </html>
