@@ -1,0 +1,132 @@
+@media (max-width :1379px){
+    /* #below-line{
+        justify-content: space-evenly;
+        flex: 2 9 50%;
+    } */
+
+    #dealsOfDay{
+        /* width: 100%; */
+    }
+
+
+    #search{
+        max-width: 600px;
+        margin: auto;
+        margin-left: 3px ;
+    }
+    #login{
+        /* margin: 10px; */
+    }
+    #more{
+        padding-left: 0;
+    }
+    #below-line{
+        max-width: inherit;
+        flex-wrap: nowrap;
+        overflow: auto;
+        justify-content: flex-start;
+    }
+
+    #below-line::-webkit-scrollbar{
+        
+        /* background-color: #aaa; */
+        height: 8px;              
+        /* width: 20px;             */
+        
+    }
+    #below-line::-webkit-scrollbar-track{
+        border-radius: 10px;
+        background: #928b8b;
+    }
+
+    #below-line::-webkit-scrollbar-thumb{
+        background: #2874f0;
+        border-radius: 10px;
+
+
+    }
+    /* #below-line::-webkit-scrollbar-button{
+        color: aliceblue;
+        background-color: rgb(226, 34, 27);
+        height: 10px;              
+        width: 4px;     
+    } */
+   
+
+    #lower-middle-line{
+        max-width: inherit;
+        flex-wrap: nowrap;
+        overflow: auto;
+        justify-content: flex-start;
+
+    }
+
+    #lower-middle-line::-webkit-scrollbar{
+        
+        /* background-color: #aaa; */
+        height: 8px;              
+        /* width: 20px;             */
+        
+    }
+    #lower-middle-line::-webkit-scrollbar-track{
+        border-radius: 10px;
+        background: #928b8b;
+    }
+
+    #lower-middle-line::-webkit-scrollbar-thumb{
+        background: #2874f0;
+        border-radius: 10px;
+
+
+    }
+
+
+
+
+
+
+
+    
+}
+/* @media (min-width: 1024px) and (max-width :1379px){
+    #dealitem7, #lower-items7,#lower-items3{ 
+        display: none;
+    }
+} */
+
+@media (max-width: 1024px){
+    header{
+        width: auto;
+    }
+    #search{
+        max-width: 600px;
+    }
+    #search-field{
+        width: 100%;
+    }
+    #dealsOfDay{
+        width: 100%;
+    }
+    #nav-bar{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    #adv-2-img{
+        display: inline;
+        width: 100%;
+    }
+    #adv-img{
+        display: none;
+    }
+      
+    #advertise{
+        display: flex;
+        justify-content: center;
+        /* text-align: center; */
+        width: 100%;
+        /* margin-left: 40%; */
+        float: none;
+        margin-left: 0;
+    }
+}
