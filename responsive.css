@@ -130,3 +130,21 @@
         margin-left: 0;
     }
 }
+
+
+@media (max-width: 768px){
+    #search{
+        min-width: 200px;
+        margin: auto;
+    }
+    header{
+        padding-left: 0;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 205px){
+    #search{
+        min-width: 100%;
+    }
+}
