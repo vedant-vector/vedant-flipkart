@@ -108,9 +108,10 @@
         width: 100%;
     }
     #nav-bar{
-        justify-content: space-around;
-        flex-wrap: wrap;
+        justify-content: center;
+        flex-wrap: nowrap;
         padding: 10px;
+        overflow: auto;
     }
     #adv-2-img{
         display: inline;
@@ -140,11 +141,28 @@
     header{
         padding-left: 0;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+    justify-content: space-around;
+    overflow: auto;
+    padding: 10px;
     }
+
 }
+
 @media (max-width: 205px){
     #search{
         min-width: 100%;
     }
+}
+
+@media (max-width: 460px){
+    #view_all{
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 840px){
+    #nav-bar{
+        justify-content: flex-start;
+    }
+    
 }
