@@ -113,12 +113,6 @@ header{
     background-color: #ffffff;
     color: #2874f0;
   }
-
-
-
-
-
-
 #more{
     margin: auto 2px;
     color: white;
@@ -126,16 +120,13 @@ header{
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-
-
     overflow: hidden;
     float: left;
-
 }
 
 #more .dropbtn{
-    color: #ffffff;
-    border: none;
+  color: #ffffff;
+  border: none;
   outline: none;
   background-color: inherit;
   font-size: 16px;
@@ -286,13 +277,6 @@ header{
     clear: both;
 }
 
-
-
-
-
-
-
-
 #main-area{
     /* float: left; */
     width: auto;
@@ -306,9 +290,7 @@ header{
     float: left;
     box-shadow: 0px 0.1px gray;
     margin-bottom: 10px;
-
 }
-
 
 #front-line{
     /* border-bottom: black 1px solid; */
@@ -404,9 +386,6 @@ header{
     text-decoration: none;
     float: none;
 }
-
-
-
 
 .discount{
     color: #388e3c;
@@ -505,12 +484,10 @@ header{
     transform: scale(1.1);
 }
 #below-line::-webkit-scrollbar{
-    height: 4px;              /* height of horizontal scrollbar ← You're missing this */
-    width: 4px;               /* width of vertical scrollbar */
+    height: 4px;             
+    width: 4px;               
     border: 1px solid #d5d5d5;
 }
-
-
 
 #tg-menu{
     position: relative;
@@ -537,7 +514,9 @@ header{
     top: 20px;
     right: 20px;
 }
-#check {display: none;}
+#check {
+    display: none;
+}
 
 
 

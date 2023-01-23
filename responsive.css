@@ -79,14 +79,7 @@
 
 
     }
-
-
-
-
-
-
-
-    
+  
 }
 /* @media (min-width: 1024px) and (max-width :1379px){
     #dealitem7, #lower-items7,#lower-items3{ 
@@ -100,12 +93,6 @@
         padding-left: 100px;
         padding-right: 100px;
     }
-  
-
-
-
-
-
     header{
         width: auto;
     }
@@ -265,30 +252,11 @@
         #cart-1 a{
             color: white;
         }
-
-
-
-
-
-
 }
 
-
-/* @media (max-width: 205px){
-    #search{
-        min-width: 100%;
-    }
-} */
 
 @media (max-width: 460px){
     #view_all{
         margin-right: auto;
     }
 }
-
-/* @media (max-width: 840px){
-    #nav-bar{
-        justify-content: flex-start;
-    }
-    
-} */
