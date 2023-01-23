@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
     <script>
         // Set the date we're counting down to
         var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
@@ -50,7 +56,7 @@
     <div class="container">
         <header>
             <div id="logo"><a href="#">
-                <img src="Images/logo.png" alt="Logo" id="header-image"></a>
+                    <img src="Images/logo.png" alt="Logo" id="header-image"></a>
             </div>
             <div id="search">
                 <input type="search" placeholder="&nbsp;&nbsp;Search for products brands & more" id="search-field">
@@ -68,68 +74,134 @@
                     <a href="#">Sign Up</a>
                     <a href="#">Vouchars</a>
                     <a href="#">Download the app</a>
-                  </div>
+                </div>
 
-<!--                 
-                <a href="#" id="more">
-                <p>More </p>
-            </a> -->
             </div>
             <div id="cart">
-                
+
                 <i style="font-size:16px" class="fa">&#xf07a;</i>
                 Cart
-            
+
 
             </div>
+
+
+            <div id="tg-menu">
+                <input type='checkbox' id='check' />
+                <span class="menu">
+
+                    <div>
+                        <li>
+                            <div id="logo" class="logo-1"><a href="#">
+                                    <img src="Images/logo.png" alt="Logo" id="header-image"></a>
+                            </div>
+                        </li>
+                        <li><input type="button" value="Login" id="login-btn"></li>
+                        <li>
+                            <div id="cart-1">
+                                <a href="">
+                                    <i style="font-size:16px" class="fa">&#xf07a;</i>
+                                    Cart
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="more-1">
+                                <button class="dropbtn"> More
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#">Sign Up</a>
+                                    <a href="#">Vouchars</a>
+                                    <a href="#">Download the app</a>
+                                </div>
+                        </li>
+
+                        
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+
+                    </div>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         </header>
 
         <nav id="nav-bar">
             <div id="item1" class="nav-item">
                 <a href="#">
-                <img src="Images/Nav-images/47e5c31ef7dcce1e.webp" alt="offer" class="nav-image"> </a>
+                    <img src="Images/Nav-images/47e5c31ef7dcce1e.webp" alt="offer" class="nav-image"> </a>
                 <p>Offers</p>
-           
+
             </div>
             <div id="item2" class="nav-item">
                 <a href="#">
-                <img src="Images/Nav-images/beauty.webp" alt="beauty" class="nav-image"></a>
+                    <img src="Images/Nav-images/beauty.webp" alt="beauty" class="nav-image"></a>
                 <p>Beauty</p>
             </div>
             <div id="item3" class="nav-item">
                 <a href="#">
-                <img src="Images/Nav-images/electronics.webp" alt="electronics" class="nav-image"></a>
+                    <img src="Images/Nav-images/electronics.webp" alt="electronics" class="nav-image"></a>
                 <p>Electronics</p>
             </div>
             <div id="item4" class="nav-item">
                 <a href="#">
-                <img src="Images/Nav-images/fashion.webp" alt="fashion" class="nav-image"></a>
-                <p>Fashion</p>
+                    <img src="Images/Nav-images/fashion.webp" alt="fashion" class="nav-image"></a>
+                    <div id="fashion">
+                        <button class="dropbtn-f"> Fashion
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content-f">
+                            <a href="#">Kurta</a>
+                            <a href="#">Saree</a>
+                            <a href="#">Daily Wear</a>
+                        </div>
+        
+                    </div>
             </div>
             <div id="item5" class="nav-item">
                 <a href="#">
-                <img src="Images/Nav-images/flights.webp" alt="flights" class="nav-image"></a>
+                    <img src="Images/Nav-images/flights.webp" alt="flights" class="nav-image"></a>
                 <p>Flights</p>
             </div>
             <div id="item6" class="nav-item">
                 <a href="#">
-                <img src="Images/Nav-images/grocery.webp" alt="grocery" class="nav-image"></a>
+                    <img src="Images/Nav-images/grocery.webp" alt="grocery" class="nav-image"></a>
                 <p>Grocery</p>
             </div>
             <div id="item7" class="nav-item">
                 <a href="#">
-                <img src="Images/Nav-images/home.webp" alt="home" class="nav-image"></a>
+                    <img src="Images/Nav-images/home.webp" alt="home" class="nav-image"></a>
                 <p>Home</p>
             </div>
             <div id="item8" class="nav-item">
                 <a href="#">
-                <img src="Images/Nav-images/mobile-tablet.webp" alt="mobile-tablet" class="nav-image"></a>
+                    <img src="Images/Nav-images/mobile-tablet.webp" alt="mobile-tablet" class="nav-image"></a>
                 <p>Mobiles & Tablet</p>
             </div>
             <div id="item9" class="nav-item">
                 <a href="#">
-                <img src="Images/Nav-images/tv-appliances.webp" alt="tv-appliances" class="nav-image"></a>
+                    <img src="Images/Nav-images/tv-appliances.webp" alt="tv-appliances" class="nav-image"></a>
                 <p>Tv Aplliances</p>
             </div>
             <div class="clear">
@@ -304,7 +376,7 @@
 
 
 
-                
+
 
 
 
@@ -379,7 +451,8 @@
 
                     <div id="lower-items2">
                         <div id="lower-boxing">
-                            <a href="#"><img src="Images/sub-images/2-Noice-watch.webp" alt="Noice-watch" class="lower-img">
+                            <a href="#"><img src="Images/sub-images/2-Noice-watch.webp" alt="Noice-watch"
+                                    class="lower-img">
                             </a>
                         </div>
                         <p class="item-name">
@@ -395,7 +468,8 @@
                     </div>
                     <div id="lower-items3">
                         <div id="lower-boxing">
-                            <a href="#"><img src="Images/sub-images/3-oppo-pads.webp" alt="Lenovo smart tablet" class="lower-img">
+                            <a href="#"><img src="Images/sub-images/3-oppo-pads.webp" alt="Lenovo smart tablet"
+                                    class="lower-img">
                             </a>
                         </div>
                         <p class="item-name">
@@ -411,7 +485,8 @@
                     </div>
                     <div id="lower-items4">
                         <div id="lower-boxing">
-                            <a href="#"><img src="Images/sub-images/4-firebolt.webp" alt="Firebolt Smart" class="lower-img">
+                            <a href="#"><img src="Images/sub-images/4-firebolt.webp" alt="Firebolt Smart"
+                                    class="lower-img">
                             </a>
                         </div>
                         <p class="item-name">
@@ -428,7 +503,8 @@
 
                     <div id="lower-items5">
                         <div id="lower-boxing">
-                            <a href="#"><img src="Images/sub-images/5-tablet-guard.webp" alt="Tablet Guard" class="lower-img">
+                            <a href="#"><img src="Images/sub-images/5-tablet-guard.webp" alt="Tablet Guard"
+                                    class="lower-img">
                             </a>
                         </div>
                         <p class="item-name">
@@ -444,7 +520,8 @@
                     </div>
                     <div id="lower-items6">
                         <div id="lower-boxing">
-                            <a href="#"><img src="Images/sub-images/6-game-control.webp" alt="Gaming Accessories" class="lower-img">
+                            <a href="#"><img src="Images/sub-images/6-game-control.webp" alt="Gaming Accessories"
+                                    class="lower-img">
                             </a>
                         </div>
                         <p class="item-name">
