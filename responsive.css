@@ -95,6 +95,17 @@
 } */
 
 @media (max-width: 1024px){
+
+    #nav-bar{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+  
+
+
+
+
+
     header{
         width: auto;
     }
@@ -107,12 +118,12 @@
     #dealsOfDay{
         width: 100%;
     }
-    #nav-bar{
+    /* #nav-bar{
         justify-content: center;
         flex-wrap: nowrap;
         padding: 10px;
         overflow: auto;
-    }
+    } */
     #adv-2-img{
         display: inline;
         width: 100%;
@@ -145,6 +156,13 @@
     overflow: auto;
     padding: 10px;
     }
+    #nav-bar{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .nav-item{
+        font-size: 0.7rem;
+    }
 
 }
 
@@ -160,9 +178,9 @@
     }
 }
 
-@media (max-width: 840px){
+/* @media (max-width: 840px){
     #nav-bar{
         justify-content: flex-start;
     }
     
-}
+} */
