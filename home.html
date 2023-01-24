@@ -18,29 +18,15 @@
 
 
     <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
-
-        // Update the count down every 1 second
-        var x = setInterval(function () {
-
-            // Get today's date and time
+            var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+            var x = setInterval(function () {
             var now = new Date().getTime();
-
-            // Find the distance between now and the count down date
             var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            //var days = Math.floor(distance / (1000 * 60 * 60 * 24));
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Output the result in an element with id="demo"
             document.getElementById("demo").innerHTML = hours + "h "
                 + minutes + "m " + seconds + "s left";
-
-            // If the count down is over, write some text 
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("demo").innerHTML = "EXPIRED";
@@ -54,13 +40,13 @@
 <body>
 
     <div class="container">
+        <!-- Header Section -->
         <header>
             <div id="logo"><a href="#">
                     <img src="Images/logo.png" alt="Logo" id="header-image"></a>
             </div>
             <div id="search">
                 <input type="search" placeholder="&nbsp;&nbsp;Search for products brands & more" id="search-field">
-                <!-- <input type="button" value="" id="search-sym"> &#128270 -->
 
             </div>
             <div id="login">
@@ -78,14 +64,9 @@
 
             </div>
             <div id="cart">
-
                 <i style="font-size:16px" class="fa">&#xf07a;</i>
                 Cart
-
-
             </div>
-
-
             <div id="tg-menu">
                 <input type='checkbox' id='check' />
                 <span class="menu">
@@ -116,15 +97,14 @@
                                     <a href="#">Download the app</a>
                                 </div>
                         </li>
-
-
                         <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-
                     </div>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
             </div>
         </header>
+
+        <!-- Navigation Section -->
 
         <nav id="nav-bar">
             <div id="item1" class="nav-item">
@@ -204,15 +184,7 @@
                     </div>
                 </div>
 
-
-
-                <!--  ----------------------------------------------------------------  -->
-
-
                 <div id="below-line">
-                    <!-- <div id="child">
-
-                    </div> -->
                     <div id="dealitem1" class="deal_item">
                         <div id="boxing">
                             <a href="#"><img src="Images/main-images/1-water-bottol.webp" alt="" class="deal_img">
@@ -339,15 +311,15 @@
                     </div>
 
                 </div>
-
             </section>
+            <!-- Advertise Section -->
             <div id="advertise">
                 <aside>
                     <a href="#"></a><img src="Images/main-images/adv.jpg" alt="advertisement" id="adv-img">
                     <a href="#"></a><img src="Images/main-images/long-ad.webp" alt="advertisement" id="adv-2-img">
                 </aside>
-
             </div>
+            <!-- Lower Product Section -->
             <div id="lower-section">
                 <div id="lower-first-line">
 
@@ -360,11 +332,6 @@
 
                     </div>
                 </div>
-
-
-
-                <!-- ---------------- ------------------------------------------------->
-
 
                 <div id="lower-middle-line">
                     <div id="lower-items1">
